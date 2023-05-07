@@ -1,65 +1,29 @@
-# <img src="https://intranet.hbtn.io/assets/holberton-logo-default-27055cb2f875eb10bf3b3942e52a24581bc0667695bdc856d4f08b469b678000.png" width="30"> AirBnB Clone V.4 - Web dynamic
+# AirBnB Clone Project
 
-## Synopsis
-This is the 4th version of our AirBnB clone project. We will be using python3, RESTful API, MySQL, Flask, and jQuery AJAX
+This project is a clone of the popular vacation rental platform, AirBnB, built using the Python programming language and Flask web framework for the ALX Software Engineering programme. 
 
-<p><img src="https://s3.amazonaws.com/intranet-projects-files/concepts/74/hbnb_step5.png" alt="step2"></p>
+## Features
+- User authentication and authorization
+- Listing properties for rent
+- Booking properties
+- Managing bookings and reservations
+- User profiles with past booking history
+- Reviews and ratings for properties
+- Search and filtering properties by location, price range, and other criteria
 
-## Table of Contents
-* [Environment](#environment)
-* [Installation](#installation)
-* [File Descriptions](#file-descriptions)
-* [Usage](#usage)
-* [Examples of use](#examples-of-use)
-* [Bugs](#bugs)
-* [Authors](#authors)
-* [License](#license)
+## Requirements
+- Python 3.x
+- Flask
+- MySQL
 
-## Environment
-This project is interpreted/tested on Ubuntu 14.04 LTS using python3 (version 3.4.3), jQuery (version 3.x), MySQL (version 5.7), Flask, and Chrome (version 57.0)
+## Getting Started
+1. Clone the repository: `git clone https://github.com/<your_username>/AirBnB_clone.git`
+2. Install the required packages: `pip install -r requirements.txt`
+3. Set the environment variable: `export FLASK_APP=run.py`
+4. Run the migrations: `flask db upgrade`
+5. Run the development server: `flask run`
+6. Open your browser and navigate to localhost
 
-## Installation
-** UNDER CONSTRUCTION **
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## File Structure
-- **[api](api)** directory contains Flask web applications for a RESTful API
-- **[models](models)** directory contains all classes used for this project:
-- **[tests](tests)** directory contains all unit test cases for this project.
-- **[web_dynamic](web_dynamic)** directory contains all files necessary to start a dynamic Flask web application.
-- **[web_flask](web_flask)** directory contains all files necessary to start a Flask web application.
-- **[web_static](web_static)** directory contains all html, css and images used for the static website.
-- [0-setup_web_static.sh](0-setup_web_static.sh) - bash script that sets up web servers for the deployment of `web_static`
-- [1-pack_web_static.py](1-pack_web_static.py) - Fabric script that generates a .tgz archive from the contents of `web_static`, using the function `do_pack`
-- [2-do_deploy_web_static.py](2-do_deploy_web_static.py) - Fabric script (based on [1-pack_web_static.py](1-pack_web_static.py)) that distributes an archive to web servers, using the function `do_deploy`
-- [3-deploy_web_static.py](3-deploy_web_static.py) - Fabric script (based on [2-do_deploy_web_static.py](2-do_deploy_web_static.py)) that creates and distributes an archive to web servers, using the function `deploy`
-- [AUTHORS](AUTHORS) - list of Authors who have worked on this project.
-- [console.py](console.py) - the console is a command line used to interact with the storage engines. 
-- [setup_mysql_dev.sql](setup_mysql_dev.sql) - MySQL script to set-up the hbnb_dev_db database.
-- [setup_mysql_test.sql](setup_mysql_test.sql) - MySQL script to set-up the hbnb_test_db database.
-
-## Examples of Use
-** UNDER CONSTRUCTION **
-### Console Example:
-```
-vagrantAirBnB_clone$./console.py
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF  all  create  destroy  help  quit  show  update
-
-(hbnb) all MyModel
-** class doesn't exist **
-(hbnb) create BaseModel
-7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) all BaseModel
-[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
-(hbnb) destroy BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-** no instance found **
-(hbnb) quit
-```
-Authors:
-Anteneh Mulusew and Ikenna Udemezue
